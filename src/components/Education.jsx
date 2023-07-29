@@ -4,12 +4,12 @@ import "../components/Header.css";
 
 const Education = () => {
   return (
-    <div className=" mt-16" id="Education">
-      <div className="text-center mb-6">
+    <div className=" mt-24" id="Education">
+      <div className="text-center">
         <h1 className="text-5xl">
           My <span className=" text-indigo-600 ">Education</span>
         </h1>
-        <p className="mt-4 mb-10 text-lg ">
+        <p className="mt-4 mb-20 text-lg ">
           Education Is Not The Learning Of Facts, But The Training Of The Mind
           To Think.
         </p>
@@ -19,7 +19,7 @@ const Education = () => {
           return (
             <div
               key={index}
-              className=" lg:ml-20 flex flex-col justify-center lg:justify-start  lg:flex lg:flex-row lg:gap-7   shadow-md lg:hover:scale-125 hover:scale-105 duration-700 "
+              className=" lg:ml-20 flex flex-col justify-center lg:justify-start  lg:flex lg:flex-row lg:gap-7   shadow-md lg:hover:scale-105 hover:scale-100 duration-700 "
             >
               <div className=" flex justify-center items-center">
                 <img

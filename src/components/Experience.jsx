@@ -13,7 +13,7 @@ const Experience = () => {
         {experienceArray.map((i, index) => {
           return (
             <div
-              className=" flex flex-col lg:flex lg:flex-row lg:gap-10  shadow-lg  hover:scale-105 duration-700  "
+              className=" flex flex-col lg:flex lg:flex-row lg:gap-10  shadow-lg  lg:hover:scale-105 duration-700  "
               key={index}
             >
               <div className="flex justify-center items-center ">
