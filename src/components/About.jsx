@@ -9,7 +9,7 @@ const About = () => {
         {" "}
         About <span className="text-red-600 text-5xl">Me</span>{" "}
       </div>
-      <div className="flex flex-col lg:flex lg:flex-row lg:gap-56 ">
+      <div className="flex flex-col lg:flex lg:flex-row  lg:gap-20">
         <div className=" flex justify-center items-center lg:flex">
           <img className=" h-[450px]" src={model} alt="model" />
         </div>

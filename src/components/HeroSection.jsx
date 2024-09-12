@@ -9,7 +9,7 @@ import "../components/Header.css";
 const HeroSection = () => {
   return (
     <div
-      className=" flex flex-col  lg:flex lg:flex-row lg:justify-evenly mt-12 "
+      className=" flex flex-col   lg:flex-row lg:justify-evenly mt-12 "
       id="Home"
     >
       <div className="flex flex-col mt-8 justify-center items-center lg:flex lg:flex-col lg:justify-start lg:items-start  ">
