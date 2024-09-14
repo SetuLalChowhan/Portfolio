@@ -1,6 +1,6 @@
 import imdb from '../assets/imdb.png'
 import tube from '../assets/tube.png'
-import eCommerce from '../assets/ecommerce.png'
+import ecom from "../assets/ecom.jpg"
 import blog from '../assets/blog.png'
 import client from '../assets/img.jpg'
 import lms from '../assets/img-2.jpg'
@@ -37,9 +37,9 @@ const projectArray =[
         source:"https://github.com/SetuLalChowhan/Blog-Project"
     },
     {
-        image:eCommerce,
+        image:ecom,
         name:"E-commerce",
-        view:"LocalHost:3000",
+        view:"https://profound-halva-143265.netlify.app/",
         source:"https://github.com/SetuLalChowhan/FrontedEcommerce"
     },
 ]
