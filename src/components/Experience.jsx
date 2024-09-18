@@ -21,8 +21,8 @@ const Experience = () => {
               </div>
               <div className=" md:w-[730px] lg:mt-10">
                 <h1 className="text-3xl">{i.position}</h1>
-                <p className="text-2xl">{i.name}</p>
-                <p className="text-lg mt-4">{i.Passage}</p>
+                <p className="text-2xl text-justify">{i.name}</p>
+                <p className="text-lg mt-4 text-justify">{i.Passage}</p>
               </div>
             </div>
           );
