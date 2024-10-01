@@ -21,7 +21,7 @@ const HeroSection = () => {
 
         <a
           className="text-2xl  bg-indigo-600 text-white rounded-xl flex justify-center items-center w-36 mb-5"
-          href="https://drive.google.com/file/d/1oCsXY7WwaZsjZxv2XXZYnvhKGFARhGHy/view?usp=sharing"
+          href="https://drive.google.com/file/d/1Rzg3DZVbbbt2R5LJmUkRlXTPrX0hBUoT/view?usp=sharing"
           target="blank"
         >
           My CV
