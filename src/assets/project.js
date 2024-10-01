@@ -4,6 +4,7 @@ import ecom from "../assets/ecom.jpg"
 import blog from '../assets/blog.png'
 import client from '../assets/img.jpg'
 import lms from '../assets/img-2.jpg'
+import qunar from '../assets/qunar.jpeg'
 
 const projectArray =[
     {
@@ -11,6 +12,12 @@ const projectArray =[
         name:"Learning Management System",
         view:"https://learnignmanagementsystem.netlify.app/",
         source:"https://github.com/SetuLalChowhan/LMS"
+    },
+    {
+        image:qunar,
+        name:"Qunar",
+        view:"https://qunar.netlify.app/",
+        source:"https://github.com/SetuLalChowhan/Qunar"
     },
     {
         image:imdb,

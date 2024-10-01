@@ -17,12 +17,12 @@ const Project = () => {
                   <h1 className='text-2xl mt-2 mb-2'>{i.name}</h1>
                 </div>
                 <div className='flex justify-evenly mb-3'>
-                  <div className=' w-36  text-lg bg-indigo-500 text-white rounded-md flex justify-center items-center hover:opacity-80 hover:duration-500'>
-                  <a className=' ' href={`${i.view}`}>View</a>
-                  </div>
-                  <div className=' w-36 text-lg bg-indigo-500 text-white rounded-md flex justify-center items-cente hover:opacity-80 hover:duration-500'>
-                  <a className='w-30 text-lg bg-indigo-500 text-white rounded-md p-2 ' href={`${i.source}`}>Source Code</a>
-                  </div>
+                  <a  href={`${i.view}`} className=' w-36  text-lg bg-indigo-500 text-white rounded-md flex justify-center items-center hover:opacity-80 hover:duration-500'>
+                  <p className=' '>View</p>
+                  </a>
+                  <a href={`${i.source}`} className=' w-36 text-lg bg-indigo-500 text-white rounded-md flex justify-center items-cente hover:opacity-80 hover:duration-500'>
+                  <p className='w-30 text-lg bg-indigo-500 text-white rounded-md p-2 ' >Source Code</p>
+                  </a>
                  
                 </div>
               </div>

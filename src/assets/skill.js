@@ -13,6 +13,8 @@ import git from '../assets/git.png'
 import github from '../assets/github.png'
 import redux from "../assets/redux.png"
 import netlify from '../assets/netlifly.png'
+import typescript from '../assets/typescript.png'
+import nextjs from '../assets/Next.js Icon.png'
 
 const skillArray = [
   {
@@ -30,6 +32,14 @@ const skillArray = [
   {
     name: "JavaScript",
     image: js,
+  },
+  {
+    name: "TypeScript",
+    image: typescript,
+  },
+  {
+    name: "Next.js",
+    image: nextjs,
   },
   {
     name: "React.js",
