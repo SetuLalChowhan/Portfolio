@@ -7,7 +7,7 @@ const educationArray =[
       image:ju,
       degree:"M.Sc in Computer Sciences and Engineering",
       name:"Jahangirnagar University",
-      passing_year:"Ongoing",
+      passing_year:"2024",
     },
     {
       image:uits,  
