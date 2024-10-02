@@ -8,6 +8,13 @@ import qunar from '../assets/qunar.jpeg'
 
 const projectArray = [
     {
+        image: blog,
+        name: "Blog Website",
+        view: "https://blog-mern-wig0.onrender.com/",
+        source: "https://github.com/SetuLalChowhan/Blog-Mern",
+        tools: "MERN stack (MongoDB, Express, React, Node.js)"
+    },
+    {
         image: lms,
         name: "Learning Management System",
         view: "https://learnignmanagementsystem.netlify.app/",
@@ -41,13 +48,6 @@ const projectArray = [
         view: "https://celebrated-yeot-e6ceb0.netlify.app/",
         source: "https://github.com/SetuLalChowhan/Youtube",
         tools: "React.js, JavaScript, CSS (RESTful API)"
-    },
-    {
-        image: blog,
-        name: "Blog Website",
-        view: "LocalHost:3000",
-        source: "https://github.com/SetuLalChowhan/Blog-Mern",
-        tools: "MERN stack (MongoDB, Express, React, Node.js)"
     },
     {
         image: ecom,
