@@ -1,7 +1,7 @@
 import imdb from '../assets/imdb.png'
 import tube from '../assets/tube.png'
 import ecom from "../assets/ecom.jpg"
-import blog from '../assets/blog.png'
+import blog from '../assets/blog.jpeg'
 import client from '../assets/img.jpg'
 import lms from '../assets/img-2.jpg'
 import qunar from '../assets/qunar.jpeg'
@@ -46,7 +46,7 @@ const projectArray = [
         image: blog,
         name: "Blog Website",
         view: "LocalHost:3000",
-        source: "https://github.com/SetuLalChowhan/Blog-Project",
+        source: "https://github.com/SetuLalChowhan/Blog-Mern",
         tools: "MERN stack (MongoDB, Express, React, Node.js)"
     },
     {
