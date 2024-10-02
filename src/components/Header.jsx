@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "../components/Header.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
+import "../components/Header.css"; // Ensure you have proper styles in this file
 
 const Header = () => {
-  const navText = [
+  const navItems = [
     "Home",
     "About",
     "Skills",
@@ -14,79 +13,70 @@ const Header = () => {
     "Experiences",
     "Contact",
   ];
+  
   const [active, setActive] = useState("Home");
-  const [menu, setMenu] = useState("true");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <>
-      <div
-        className=" flex flex-col bg-slate-50 sticky top-0 shadow-md h-14"
-        id="Header"
-      >
-        <div className=" flex justify-between items-center mt-3 ">
-          <div className=" ml-24 text-xl " onClick={()=>{setActive("Home")}}>
-            <a href="#Home" className="font-semibold">
-              Setu
-            </a>
-          </div>
-
-          <div className=" hidden lg:flex gap-10 mr-32 ">
-            {navText.map((i, index) => {
-              return (
-                <a
-                  href={`#${active}`}
-                  onClick={() => {
-                    setActive(i);
-                  }}
-                  key={index}
-                  className={
-                    active === i
-                      ? "text-indigo-600 border-b-2 border-b-indigo-600"
-                      : "text-black hover:text-indigo-600 hover:border-b-2 hover:border-b-indigo-600 "
-                  }
-                >
-                  <h1>{i}</h1>
-                </a>
-              );
-            })}
-          </div>
-          <div onClick={() => setMenu(!menu)} className=" flex mr-10 lg:hidden">
-            {menu ? (
-              <GiHamburgerMenu size={30} />
-            ) : (
-              <AiOutlineClose size={30} />
-            )}
-          </div>
+    <header className="bg-white sticky top-0 shadow-md z-50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
+        {/* Logo */}
+        <div className="text-2xl font-bold cursor-pointer" onClick={() => setActive("Home")}>
+          <a href="#Home">Setu</a>
         </div>
-        <div
-          className={
-            menu
-              ? "hidden  "
-              : "flex flex-col gap-8 justify-center items-center mt-4 bg-slate-100  "
-          }
-        >
-          {navText.map((i, index) => {
-            return (
-              <a
-                href={`#${i}`}
-                onClick={() => {
-                  setActive(i);
-                  setMenu(!menu);
-                }}
-                key={index}
-                className={
-                  active === i
-                    ? "text-indigo-600 border-b-2 border-b-indigo-600"
-                    : "text-black hover:text-indigo-600 hover:border-b-2 hover:border-b-indigo-600 "
-                }
-              >
-                <h1>{i}</h1>
-              </a>
-            );
-          })}
+
+        {/* Desktop Navigation */}
+        <nav className="hidden lg:flex gap-8">
+          {navItems.map((item, index) => (
+            <a
+              key={index}
+              href={`#${item}`}
+              onClick={() => setActive(item)}
+              className={`transition-colors duration-300 ${
+                active === item
+                  ? "text-indigo-600 border-b-2 border-indigo-600"
+                  : "text-gray-700 hover:text-indigo-600 hover:border-b-2 hover:border-indigo-600"
+              }`}
+            >
+              {item}
+            </a>
+          ))}
+        </nav>
+
+        {/* Mobile Menu Icon */}
+        <div className="lg:hidden">
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="text-gray-700 focus:outline-none"
+          >
+            {menuOpen ? <AiOutlineClose size={30} /> : <GiHamburgerMenu size={30} />}
+          </button>
         </div>
       </div>
-    </>
+
+      {/* Mobile Navigation */}
+      {menuOpen && (
+        <nav className="lg:hidden flex flex-col items-center bg-gray-100 shadow-md py-6">
+          {navItems.map((item, index) => (
+            <a
+              key={index}
+              href={`#${item}`}
+              onClick={() => {
+                setActive(item);
+                setMenuOpen(false);
+              }}
+              className={`block py-2 text-lg transition-colors duration-300 ${
+                active === item
+                  ? "text-indigo-600 border-b-2 border-indigo-600"
+                  : "text-gray-700 hover:text-indigo-600 hover:border-b-2 hover:border-indigo-600"
+              }`}
+            >
+              {item}
+            </a>
+          ))}
+        </nav>
+      )}
+    </header>
   );
 };
 
