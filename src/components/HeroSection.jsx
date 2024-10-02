@@ -43,7 +43,7 @@ const HeroSection = () => {
 
         {/* CV Button */}
         <motion.a
-          href="https://drive.google.com/file/d/1P5VFVyXdJOA66ZFXth345x7uTMTUEq38/view?usp=sharing"
+          href="https://drive.google.com/file/d/1c4I0DIFf7uh76aHTQQEip5K5q0K60a6g/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="text-2xl bg-indigo-600 text-white rounded-xl flex justify-center items-center w-36 mb-5 hover:bg-indigo-500 transition-all duration-300"
