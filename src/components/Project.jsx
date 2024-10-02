@@ -23,16 +23,19 @@ const Project = () => {
                 alt={project.name}
               />
               <h1 className='text-2xl font-semibold mt-3 mb-2'>{project.name}</h1>
+              <p className='text-gray-600 text-center mb-3'>{project.tools}</p> {/* Added Tools */}
             </div>
             <div className='flex justify-evenly mb-3'>
               <a
                 href={project.view}
+                target='_blank' /* Ensuring it opens in a new tab */
                 className='w-36 text-lg bg-indigo-500 text-white rounded-md flex justify-center items-center hover:bg-indigo-600 transition duration-300'
               >
                 View
               </a>
               <a
                 href={project.source}
+                target='_blank'
                 className='w-36 text-lg bg-indigo-500 text-white rounded-md flex justify-center items-center hover:bg-indigo-600 transition duration-300'
               >
                 Source Code
