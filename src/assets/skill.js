@@ -77,10 +77,7 @@ const skillArray = [
     name: "Github",
     image: github,
   },
-  {
-    name: "Netlyfy",
-    image: netlify,
-  },
+ 
 ];
 
 export default skillArray
