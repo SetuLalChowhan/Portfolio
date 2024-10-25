@@ -5,8 +5,16 @@ import blog from '../assets/blog.jpeg'
 import client from '../assets/img.jpg'
 import lms from '../assets/img-2.jpg'
 import qunar from '../assets/qunar.jpeg'
+import HiBuy  from "../assets/HiBuy.png"
 
 const projectArray = [
+    {
+        image: HiBuy,
+        name: "HiBuy(Full Stack E-Commerce Site",
+        view: "https://hibuy.onrender.com",
+        source: "https://github.com/SetuLalChowhan/Full-Stack-Site-E-Commerce-",
+        tools: "MERN stack (MongoDB, Express, React, Node.js)"
+    },
     {
         image: blog,
         name: "Blog Website",

@@ -29,14 +29,14 @@ const Project = () => {
               <a
                 href={project.view}
                 target='_blank' /* Ensuring it opens in a new tab */
-                className='w-36 text-lg bg-indigo-500 text-white rounded-md flex justify-center items-center hover:bg-indigo-600 transition duration-300'
+                className='w-36 text-lg bg-indigo-500 text-white py-2 rounded-md flex justify-center items-center hover:bg-indigo-600 transition duration-300'
               >
                 View
               </a>
               <a
                 href={project.source}
                 target='_blank'
-                className='w-36 text-lg bg-indigo-500 text-white rounded-md flex justify-center items-center hover:bg-indigo-600 transition duration-300'
+                className='w-36 text-lg bg-indigo-500 text-white rounded-md py-2 flex justify-center items-center hover:bg-indigo-600 transition duration-300'
               >
                 Source Code
               </a>
