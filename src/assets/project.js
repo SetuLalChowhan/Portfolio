@@ -10,7 +10,7 @@ import HiBuy  from "../assets/HiBuy.png"
 const projectArray = [
     {
         image: HiBuy,
-        name: "HiBuy(Full Stack E-Commerce Site",
+        name: "HiBuy(Full Stack E-Commerce Site)",
         view: "https://hibuy.onrender.com",
         source: "https://github.com/SetuLalChowhan/Full-Stack-Site-E-Commerce-",
         tools: "MERN stack (MongoDB, Express, React, Node.js)"
@@ -57,13 +57,7 @@ const projectArray = [
         source: "https://github.com/SetuLalChowhan/Youtube",
         tools: "React.js, JavaScript, CSS (RESTful API)"
     },
-    {
-        image: ecom,
-        name: "E-commerce",
-        view: "https://profound-halva-143265.netlify.app/",
-        source: "https://github.com/SetuLalChowhan/FrontedEcommerce",
-        tools: "React.js, JavaScript, CSS (RESTful API)"
-    }
+   
 ]
 
 export { projectArray }
