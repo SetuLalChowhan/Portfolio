@@ -33,13 +33,13 @@ const Project = () => {
               >
                 View
               </a>
-              <a
+              {/* <a
                 href={project.source}
                 target='_blank'
                 className='w-36 text-lg bg-indigo-500 text-white rounded-md py-2 flex justify-center items-center hover:bg-indigo-600 transition duration-300'
               >
                 Source Code
-              </a>
+              </a> */}
             </div>
           </div>
         ))}
